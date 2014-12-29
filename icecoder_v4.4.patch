@@ -1,0 +1,19 @@
+--- ice/lib/settings-common.php	2014-11-21 11:15:08.000000000 +0000
++++ icecoder/lib/settings-common.php	2014-12-29 15:26:55.127595961 +0000
+@@ -31,7 +31,8 @@
+ 	$_SESSION['loggedIn']=false;
+ 	$_SESSION['username']=false;
+ 	session_destroy();
+-	header("Location: ".dirname(__FILE__)."/?loggedOut");
++	header("Location: .");
++	die("logged out...");
+ }
+ 
+ // If magic quotes are still on (attempted to switch off in php.ini)
+@@ -158,4 +159,4 @@
+ 		return $base;
+ 	}
+ }
+-?>
+\ No newline at end of file
++?>
