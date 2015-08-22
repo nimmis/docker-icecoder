@@ -91,3 +91,7 @@ please remeber to use the `-d` flag to make it run in the background, to access 
 
 	docker exec -t <container id> /bin/bash
 
+
+### Versions
+
+Aug 22, 2015, updated to ICEcoder 5.0
